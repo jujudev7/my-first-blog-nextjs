@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Icons } from "./icons";
 import { MainNav } from "./main-nav";
 import { MobileNav } from "./mobile-nav";
+import { ModeToggle } from "./mode-toggle";
 import { buttonVariants } from "./ui/button";
 
 export function SiteHeader() {
@@ -43,6 +44,7 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
+            <ModeToggle />
             <MobileNav />
           </nav>
         </div>
