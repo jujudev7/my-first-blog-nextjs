@@ -1,5 +1,6 @@
 import { posts } from "#site/content";
 import { MDXContent } from "@/components/mdx-components";
+import "@/styles/mdx.css";
 
 interface PostPageProps {
   params: {
