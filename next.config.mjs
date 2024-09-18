@@ -11,6 +11,9 @@ export default {
 
 class VeliteWebpackPlugin {
   static started = false;
+  constructor(/** @type {import('velite').Options} */ options = {}) {
+    this.options = options;
+  }
   apply(/** @type {import('webpack').Compiler} */ compiler) {
     // executed three times in nextjs
     // twice for the server (nodejs / edge runtime) and once for the client
