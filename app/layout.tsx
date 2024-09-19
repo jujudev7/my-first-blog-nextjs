@@ -1,4 +1,5 @@
 import { Providers } from "@/components/providers";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -38,6 +39,7 @@ export default function RootLayout({
           <div className="px-4 relative flex min-h-dvh flex-col bg-background">
             <SiteHeader />
             <main className="flex-1">{children}</main>
+            <SiteFooter />
           </div>
         </Providers>
       </body>
