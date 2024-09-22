@@ -1,4 +1,3 @@
-import { siteConfig } from './site';
 export const siteConfig = {
   name: "JujuBlog",
   url: "https://blog.julienpenna.com",
@@ -7,8 +6,8 @@ export const siteConfig = {
   links: {
     twitter: "https://x.com/jujudev7",
     github: "https://github.com/jujudev7",
-    personalSite: "https://julienpenna.com"
-  }
-}
+    personalSite: "https://julienpenna.com",
+  },
+};
 
-export type SiteConfig = typeof siteConfig
+export type SiteConfig = typeof siteConfig;
