@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
-import { ReactMode } from "react";
+import { ReactNode } from "react";
 
 interface CalloutProps {
-  children?: ReactMode;
+  children?: ReactNode;
   type?: "default" | "warning" | "danger";
 }
 
