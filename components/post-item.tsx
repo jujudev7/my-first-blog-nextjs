@@ -6,7 +6,7 @@ import { buttonVariants } from "./ui/button";
 interface PostItemProps {
   slug: string;
   title: string;
-  description: string;
+  description?: string;
   date: string;
 }
 

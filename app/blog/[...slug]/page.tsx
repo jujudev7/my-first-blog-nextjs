@@ -31,27 +31,27 @@ export async function generateMetadata({
   ogSearchParams.set("title", post.title);
 
   return {
-    title: posts.title,
-    description: posts.description,
+    title: post.title,
+    description: post.description,
     authors: { name: siteConfig.author },
     openGraph: {
-      title: posts.title,
-      description: posts.description,
+      title: post.title,
+      description: post.description,
       type: "article",
-      url: posts.slug,
+      url: post.slug,
       images: [
         {
           url: `/api/og?${ogSearchParams.toString()}`,
           width: 1200,
           height: 630,
-          alt: posts.title,
+          alt: post.title,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: posts.title,
-      description: posts.description,
+      title: post.title,
+      description: post.description,
       images: [`/api/og?${ogSearchParams.toString()}`],
     },
   };
